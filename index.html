@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="10;url=https://www.taquangtrung.com" />
+    <title>Redirecting...</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        text-align: center;
+        margin: 100px;
+      }
+
+      h1 {
+        color: #007bff;
+        margin-bottom: 50px;
+      }
+
+      p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      a {
+        color: #2872b8;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Redirecting...</h1>
+
+    <p>
+      I have moved to a new homepage at:
+      <a href="https://taquangtrung.com">https://taquangtrung.com</a>.
+    </p>
+
+    <p id="refresh-timer">
+      This website will automatically redirect to the new homepage after 10 seconds.
+    </p>
+
+    <p>
+      If you are not redirected, please
+      <a href="https://taquangtrung.com">click here</a>.
+    </p>
+  </body>
+
+  <script>
+    const refreshTimer = document.getElementById("refresh-timer");
+
+    let timerInSeconds = 0;
+
+    setInterval(() => {
+      timerInSeconds += 1;
+
+      refreshTimer.innerHTML = `This website will automatically redirect to the new homepage after  ${10 - timerInSeconds} seconds.`;
+    }, 1000);
+  </script>
+
+</html>
