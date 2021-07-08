@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <link href="../css/font.css" rel="stylesheet" type="text/css">
+    <title>Trung Ta</title>
+    <meta content="Ta, Quang Trung" name="keywords" />
+    <link rel="stylesheet" type = "text/css" href="../css/main.css">
+    <script src="scripts/w3.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <div w3-include-html="header.html"></div>
+
+      <!-- body -->
+      <div class="container content">
+        <!-- Research -->
+        <h2 id="convention">Coding Convention</h2>
+        <ul>
+          <li>
+            Keep a tuple in a single line
+
+            Instead of
+
+            <code>
+            (long_name_1, long_name_2, long_name_3,
+            long_name_4, long_name_5, long_name_6)
+            </code>
+
+            Write:
+
+            <code>
+            let a1, a2, a3 = long_name_1, long_name_2, long_name_3 in
+            let a4, a5, a6 = long_name_4, long_name_5, long_name_6 in
+            (a1, a2, a3, a4, a5, a6)
+            </code>
+          </li>
+        </ul>
+
+
+      </div>
+
+      <!-- footer -->
+      <div w3-include-html="footer.html"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script>w3.includeHTML();</script>
+  </body>
+</html>

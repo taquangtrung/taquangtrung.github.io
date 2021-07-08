@@ -1,0 +1,50 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Ta Quang Trung</title>
+  <meta content="Ta Quang Trung" name="keywords" />
+  <style>
+   body { text-align: center; padding: 90px; }
+   article { display: block; text-align: center; width: 600px; margin: 0 auto; }
+   a { color: #0e8258; text-decoration: none; }
+   a:hover { color: #eba518; text-decoration: none; }
+  </style>
+
+  <script type="text/javascript">
+   var ss = 20;
+   function countdown() {
+     ss = ss-1;
+     if (ss<0) {
+       window.location="http://taquangtrung.github.io";
+     }
+     else {
+       document.getElementById("countdown").innerHTML=ss;
+       window.setTimeout("countdown()", 1000);
+     }
+   }
+  </script>
+</head>
+
+<body onload="countdown()"">
+  <article>
+    <p>
+      Hi! My name is Trung. 
+    </p>
+
+    <p>
+      Recently, I have moved my homepage to GitHub at
+      <a href='http://taquangtrung.github.io/'>
+        http://taquangtrung.github.io</a>.
+    </p>
+
+    <p>
+      You will be automatically redirected to this website after 
+      (<span id=countdown>20</span>) seconds.
+    </p>
+
+    <p>
+      Please click directly on the above link if you don't want to wait.
+    </p>
+  </article>
+
+</body>
+</html>
